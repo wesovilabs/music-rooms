@@ -147,6 +147,7 @@
    ```   
    mix ecto.migrate -v 20160714212048
    ```     
+   
    Now the column singer has beed added to the table tracks and if we run
    
    ```
