@@ -5,7 +5,6 @@ defmodule MusicRoomsServer.API do
   before do
     plug Plug.Logger
     plug CORSPlug
-    plug Plug.Static, at: "/static", from: "/my/static/path/"
     plug Plug.Parsers,
         pass: ["*/*"],
         json_decoder: Poison,
