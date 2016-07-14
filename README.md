@@ -45,34 +45,33 @@
    After running this command,  dependencies will be stored into the deps directory.
    To implement this application we will be making use of the belows:
    
-        
-   - **Maru**: Maru is a REST-like API micro-framework for elixir inspired by grape. There are other frameworks but I just decided trying this one after reading good feedback for elixir developers.
+   -    **Maru**: Maru is a REST-like API micro-framework for elixir inspired by grape. There are other frameworks but I just decided trying this one after reading good feedback for elixir developers.
    
-   - **Ecto**: It allows us to do the database connections and running the queries. So far we will only care about connecting to a Postgres database but
-    there are other projects which are very handy that helps us to work with Mongo database too. 
+   -    **Ecto**: It allows us to do the database connections and running the queries. So far we will only care about connecting to a Postgres database but
+        there are other projects which are very handy that helps us to work with Mongo database too. 
     
-   - **Postgrex**: PostgreSql database driver for Elixir.
+   -    **Postgrex**: PostgreSql database driver for Elixir.
    
-   - **Plug**: It's a specification and conveniences for composable modules between web applications.
+   -    **Plug**: It's a specification and conveniences for composable modules between web applications.
    
-   - **Cors_Plug**: It's a Elixir Plug to add CORS.
+   -    **Cors_Plug**: It's a Elixir Plug to add CORS.
    
-   
-   **Configuration**
+ 
+ **Configuration**
 
-   **Database Schema**
+ **Database Schema**
    
-   **Rest API**
+ **Rest API**
    
-   **Routers**
+ **Routers**
    
-   **Running the application**
+ **Running the application**
    
-   **Unit Testing**         
+ **Unit Testing**         
             
-   **Dockerizing**
+ **Dockerizing**
    
-   **Deploying onto the cloud**
+ **Deploying onto the cloud**
             
 ## Frontend - React & Redux
 
