@@ -6,8 +6,8 @@
 
 ## Purpose
  
- The purpose of this article is sharing with other geeks my experience developing an application with Elixir.  A few months ago I just did
- some researches coding with Erlang and to be honest I really enjoyed it writing the *[article](https://github.com/wesovi/js-freeze_vs_seal)*, but this time  I will go for a more real application which could provide me with some better feedback
+ The purpose of this article is sharing with other people my experience developing an application with Elixir.  A few months ago I just did
+ some researches in coding with Erlang and to be honest I really enjoyed it writing the *[article](https://github.com/wesovi/js-freeze_vs_seal)*, but this time  I will go for a more real application which could provide me with some better feedback
  about the functional programming language.
 
  After reading this post you will have received some tops on how to write and run your Rest application and then I invite yourself to 
@@ -60,6 +60,53 @@
  **Configuration**
 
  **Database Schema**
+ 
+   In order to create our tables in the postgresql database we define our script in the following path: */priv/repo/structure.sql*:
+   {% highlight sql %}
+        CREATE SEQUENCE tracks_id_seq;
+           
+        CREATE TABLE tracks (
+            id bigint NOT NULL DEFAULT nextval('tracks_id_seq'),
+            title   VARCHAR,
+            playlist_id bigint,
+            inserted_at timestamp without time zone
+        );
+           
+        ALTER SEQUENCE tracks_id_seq OWNED BY tracks.id;
+           
+           
+        CREATE SEQUENCE playlists_id_seq;
+           
+        CREATE TABLE playlists (
+            id bigint NOT NULL DEFAULT nextval('playlists_id_seq'),
+            name VARCHAR,
+            link VARCHAR,
+            inserted_at timestamp without time zone
+        );
+           
+        ALTER SEQUENCE playlists_id_seq OWNED BY playlists.id;
+        
+        ALTER TABLE ONLY tracks
+            ADD CONSTRAINT tracks PRIMARY KEY (id);
+           
+        ALTER TABLE ONLY playlists
+            ADD CONSTRAINT playlists PRIMARY KEY (id);
+           
+        ALTER TABLE tracks
+            ADD CONSTRAINT playlist_id_fk FOREIGN KEY (id)
+            REFERENCES playlists (id) MATCH SIMPLE
+            ON UPDATE CASCADE ON DELETE CASCADE;     
+        
+   {% endhighlight %}   
+        
+
+   
+   Run command 
+        
+        mix ecto.gen.migration create_trasks
+        
+   Then a new file will be created in /priv/repo/migrations
+   Now we can write some content to the new file.  
    
  **Rest API**
    
