@@ -54,7 +54,7 @@
    
    -    **Plug**: It's a specification and conveniences for composable modules between web applications.
    
-   -    **Cors_Plug**: It's a Elixir Plug to add CORS.
+   -    **Cors_Plug**: It's a Elixir Plug to add CORS. So far we would not need this dependcy but in the future we will implement another project that will consume our services.
    
  
  **Configuration**
@@ -101,7 +101,7 @@
    Now  we can run the below command that will create the tables into the database.
    
    ```
-    mix ecto.load
+   mix ecto.load
    ```
    
    
