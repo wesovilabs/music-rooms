@@ -1,7 +1,6 @@
 defmodule MusicRoomsServer.API do
   use Maru.Router
 
-
   before do
     plug Plug.Logger
     plug CORSPlug
@@ -21,7 +20,7 @@ defmodule MusicRoomsServer.API do
       |> text("Unauthorized")
   end
 
-  rescue_from NotFound, as: e do
+  rescue_from NotFound  , as: e do
       IO.inspect e
       conn
       |> put_status(404)
