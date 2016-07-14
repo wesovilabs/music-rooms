@@ -24,6 +24,8 @@
 ## Backend - Elixir
 
    **Project structure**
+    
+   * _build: This directory contains only compiled code and libraries.
 
    **Dependencies**
    
@@ -45,12 +47,13 @@
             
 ## Frontend - React & Redux
 
-
-## Running the project on a container
-
-## Docker-compose to run the environment 
+    
+    
+## Running the project on containers 
 
 ## Writing acceptance tests
+
+## Writing stress tests
 
 ## Deploying onto the cloud
 
