@@ -133,12 +133,14 @@
         end
       end 
    
-   if we run command 
+   To see all the migrations status we can run:
+   
    ```
     mix ecto.migrations
    ```
   
    [](assets/ecto.migrations.png)
+   
    
    we can 
    
