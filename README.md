@@ -23,6 +23,15 @@
  
 ## Setting up the environment
 
+   *Dependencies*
+
+   *Database Schema*
+   
+   *Rest API*
+   
+    
+
+
 ## Coding the project
 
 ## Writing unit tests
