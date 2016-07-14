@@ -141,6 +141,7 @@
     mix ecto.migrations
    ```
   
+   
    ![Result](https://github.com/wesovilabs/music-rooms/blob/develop/assets/ecto.migrations.png)
    
    Then Run command 
