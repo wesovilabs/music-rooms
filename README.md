@@ -33,7 +33,7 @@
    * lib: The code of our project.
    * test: Unit testing for our application
    * mix.exs: In this file we define the dependencies and the application modules.
-   * priv/repo/migrations: Database schema creation used by Ecto.
+   * 'priv/repo/migrations': Database schema creation used by Ecto.
 
 
  **Dependencies**
