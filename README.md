@@ -36,7 +36,7 @@
    * priv/repo/migrations: Database schema creation used by Ecto.
 
 
-   **Dependencies**
+  **Dependencies**
 
    The file mix.exs contains all the dependencies used by this application and we can download them by running the below command
         
