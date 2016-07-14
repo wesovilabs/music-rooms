@@ -98,7 +98,8 @@
         
    ```   
         
-   Now  we can run the below command
+   Now  we can run the below command that will create the tables into the database.
+   
    ```
     mix ecto.load
    ```
