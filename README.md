@@ -122,6 +122,26 @@
    end
    ```
    
+   and let add the new column
+   
+    ```
+      defmodule MusicRoomsServer.Repo.Migrations.AddColumnSingerToTracksTable do
+        use Ecto.Migration
+      
+        def change do
+            add_column :singer, :string
+        end
+      end 
+   
+   if we run command 
+   ```
+    mix ecto.migrations
+   ```
+  
+   ![Game](assets/ecto.migrations.png)
+   
+   we can 
+   
    Run command 
         
         mix ecto.gen.migration create_trasks
