@@ -26,7 +26,7 @@
  
 ## Backend - Elixir Rest Api
 
- **Project structure** 
+ **Project directories structure** 
    * _build: This directory contains only compiled code and libraries.
    * config: Configuration for our application.
    * deps: Dependencies used by this application. 
@@ -45,9 +45,9 @@
    After running this command,  dependencies will be stored into the deps directory.
    To implement this application we will be making use of the belows:
    
-   -    **Maru**: Maru is a REST-like API micro-framework for elixir inspired by grape. There are other frameworks but I just decided trying this one after reading good feedback for elixir developers.
+   +    **Maru**: Maru is a REST-like API micro-framework for elixir inspired by grape. There are other frameworks but I just decided trying this one after reading good feedback for elixir developers.
    
-   -    **Ecto**: It allows us to do the database connections and running the queries. So far we will only care about connecting to a Postgres database but
+   +    **Ecto**: It allows us to do the database connections and running the queries. So far we will only care about connecting to a Postgres database but
         there are other projects which are very handy that helps us to work with Mongo database too. 
     
    -    **Postgrex**: PostgreSql database driver for Elixir.
