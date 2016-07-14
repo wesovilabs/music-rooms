@@ -21,7 +21,7 @@
    
    Any member in the channel will be able to add new tracks to the playlist.
  
-## Backend
+## Backend - Elixir
 
    **Project structure**
 
@@ -39,7 +39,9 @@
    
    **Unit Testing**         
             
-   **Running on a docker**
+   **Dockerizing**
+   
+   **Deploying onto the cloud**
             
 ## Frontend
 
