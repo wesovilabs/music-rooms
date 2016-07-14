@@ -98,7 +98,11 @@
         
    ```   
         
-
+   Now  we can run the below command
+   ```
+    mix ecto.load
+   ```
+   
    
    Run command 
         
