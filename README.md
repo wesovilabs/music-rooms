@@ -104,6 +104,23 @@
    mix ecto.load
    ```
    
+   We forgot adding a column for store the singer in the tracks table, but we can fix it by creating a migration script. 
+   
+   ```
+   mix ecto.gen.migration AddColumnSingerToTracksTable
+   ```
+   
+   Now a new file is created in */priv/repo/migrations*
+   
+   ```
+   defmodule MusicRoomsServer.Repo.Migrations.AddColumnSingerToTracksTable do
+     use Ecto.Migration
+   
+     def change do
+   
+     end
+   end
+   ``
    
    Run command 
         
