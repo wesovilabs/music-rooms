@@ -138,7 +138,7 @@
     mix ecto.migrations
    ```
   
-   ![Game](assets/ecto.migrations.png)
+   [](assets/ecto.migrations.png)
    
    we can 
    
