@@ -21,20 +21,28 @@
    
    Any member in the channel will be able to add new tracks to the playlist.
  
-## Setting up the environment
+## Backend
 
-   *Dependencies*
+   **Project structure**
 
-   *Database Schema*
+   **Dependencies**
    
-   *Rest API*
+   **Configuration**
+
+   **Database Schema**
    
-    
+   **Rest API**
+   
+   **Routers**
+   
+   **Running the application**
+   
+   **Unit Testing**         
+            
+   **Running on a docker**
+            
+## Frontend
 
-
-## Coding the project
-
-## Writing unit tests
 
 ## Running the project on a container
 
