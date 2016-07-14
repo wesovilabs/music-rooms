@@ -110,7 +110,7 @@
    mix ecto.gen.migration AddColumnSingerToTracksTable
    ```
    
-   Now a new file is created in */priv/repo/migrations*
+   Now a new file is created in */priv/repo/migrations/20160714212048_add_column_singer_to_tracks_table.exs* and its content is
    
    ```
    defmodule MusicRoomsServer.Repo.Migrations.AddColumnSingerToTracksTable do
