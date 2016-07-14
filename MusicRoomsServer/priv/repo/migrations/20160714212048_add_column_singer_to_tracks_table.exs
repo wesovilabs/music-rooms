@@ -2,6 +2,8 @@ defmodule MusicRoomsServer.Repo.Migrations.AddColumnSingerToTracksTable do
   use Ecto.Migration
 
   def change do
-    add_column :tracks, :singer, :string
+    alter table(:tracks) do
+        add :singer, :string
+    end
   end
 end

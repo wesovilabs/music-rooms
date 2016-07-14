@@ -129,7 +129,9 @@
         use Ecto.Migration
       
         def change do
-            add_column :singer, :string
+            alter table(:tracks) do
+                add :singer, :string
+            end    
         end
       end 
    
@@ -141,12 +143,17 @@
   
    ![Result](https://github.com/wesovilabs/music-rooms/blob/develop/assets/ecto.migrations.png)
    
+   Then Run command 
+   ```   
+   mix ecto.migrate -v 20160714212048
+   ```     
+   Now the column singer has beed added to the table tracks and if we run
    
-   we can 
-   
-   Run command 
-        
-        mix ecto.gen.migration create_trasks
+   ```
+   mix ecto.migrations
+   ```
+     
+   ![Result](https://github.com/wesovilabs/music-rooms/blob/develop/assets/ecto.migrations.2.png)
         
    Then a new file will be created in /priv/repo/migrations
    Now we can write some content to the new file.  
