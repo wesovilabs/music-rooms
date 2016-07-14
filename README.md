@@ -26,7 +26,7 @@
  
 ## Backend - Elixir Rest Api
 
-   **Project structure** 
+ **Project structure** 
    * _build: This directory contains only compiled code and libraries.
    * config: Configuration for our application.
    * deps: Dependencies used by this application. 
@@ -36,7 +36,7 @@
    * priv/repo/migrations: Database schema creation used by Ecto.
 
 
-  **Dependencies**
+ **Dependencies**
 
    The file mix.exs contains all the dependencies used by this application and we can download them by running the below command
         
