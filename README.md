@@ -26,8 +26,7 @@
  
 ## Backend - Elixir Rest Api
 
-   **Project structure**
-    
+   **Project structure** 
    * _build: This directory contains only compiled code and libraries.
    * config: Configuration for our application.
    * deps: Dependencies used by this application. 
