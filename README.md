@@ -49,7 +49,12 @@
    
    * **Ecto**: It allows us to do the database connections and running the queries. So far we will only care about connecting to a Postgres database but
     there are other projects which are very handy that helps us to work with Mongo database too. 
-       
+    
+   * **Postgrex**: PostgreSql database driver for Elixir.
+   
+   * **Plug**: It's a specification and conveniences for composable modules between web applications.
+   
+   * **Cors_Plug**: It's a Elixir Plug to add CORS.
    
    
    **Configuration**
