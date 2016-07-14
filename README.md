@@ -43,7 +43,7 @@
    
    **Deploying onto the cloud**
             
-## Frontend
+## Frontend - React & Redux
 
 
 ## Running the project on a container
