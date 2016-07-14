@@ -2,7 +2,6 @@
 # Getting started with Elixir and ecosystem
 
 ## Motivation
-
   
 
 ## Purpose
@@ -31,13 +30,24 @@
     
    * _build: This directory contains only compiled code and libraries.
    * config: Configuration for our application.
-   * deps: Dependencies used by this application.
+   * deps: Dependencies used by this application. 
    * lib: The code of our project.
    * test: Unit testing for our application
-   * priv/repo/migrations: Database schema creation used by Ecto.
    * mix.exs: In this file we define the dependencies and the application modules.
+   * priv/repo/migrations: Database schema creation used by Ecto.
 
    **Dependencies**
+   The file mix.exs contains all the dependencies used by this application and we can download them by running the below command
+        
+        mix deps.get
+        
+   After running the above command the dependencies will be stored into the deps directory.
+   To implement this application we will be making use of the belows:
+   
+   * Maru: Maru is a REST-like API micro-framework for elixir inspired by grape.
+   * Ecto: 
+       
+   
    
    **Configuration**
 
