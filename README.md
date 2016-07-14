@@ -24,7 +24,7 @@
    
    Any member in the channel will be able to add new tracks to the playlist.
  
-## Backend - Elixir
+## Backend - Elixir Rest Api
 
    **Project structure**
     
