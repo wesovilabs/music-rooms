@@ -1,0 +1,23 @@
+version: '2'
+services:
+
+  postgres:
+    image: library/postgres:9.5.3
+    container_name: music_rooms_pg
+    volumes:
+      - postgres-db-volume:/data/postgres
+    ports:
+      - "6001:5432"
+    env_file:
+      - ./containers/postgresql/postgresql.env
+    networks:
+      - backend
+volumes:
+  postgres-db-volume:
+    driver: local
+
+networks:
+  backend:
+    driver: bridge
+
+
