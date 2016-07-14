@@ -36,7 +36,9 @@
    * mix.exs: In this file we define the dependencies and the application modules.
    * priv/repo/migrations: Database schema creation used by Ecto.
 
+
    **Dependencies**
+
    The file mix.exs contains all the dependencies used by this application and we can download them by running the below command
         
         mix deps.get
